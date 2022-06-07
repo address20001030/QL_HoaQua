@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".EditData">
+
+    <TextView
+        android:id="@+id/tv_tt"
+        android:text="Quản lý hoa quả"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_ten"
+        android:text="Tên hoa quả"
+        android:textSize="16dp"
+        android:layout_below="@id/tv_tt"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_ten"
+        android:layout_below="@id/tv_tt"
+        android:layout_toRightOf="@id/tv_ten"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_loai"
+        android:text="Loại"
+        android:textSize="16dp"
+        android:layout_below="@id/tv_ten"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_loai"
+        android:layout_below="@id/tv_ten"
+        android:layout_toRightOf="@id/tv_loai"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_dvt"
+        android:text="Đơn vị tính"
+        android:textSize="16dp"
+        android:layout_below="@id/tv_loai"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_dvt"
+        android:layout_below="@id/tv_loai"
+        android:layout_toRightOf="@id/tv_dvt"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_dg"
+        android:text="Đơn giá"
+        android:textSize="16dp"
+        android:layout_below="@id/tv_dvt"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_dg"
+        android:layout_below="@id/tv_dvt"
+        android:layout_toRightOf="@id/tv_dg"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_nsx"
+        android:text="Nơi sản xuất"
+        android:textSize="16dp"
+        android:layout_below="@id/tv_dg"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ed_nsx"
+        android:layout_below="@id/tv_dg"
+        android:layout_toRightOf="@id/tv_nsx"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:text="Sửa"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/ed_nsx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnExitED"
+        android:text="Thoát"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/btnEdit"
+        android:layout_below="@id/ed_nsx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
